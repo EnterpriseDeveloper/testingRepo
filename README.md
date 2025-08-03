@@ -39,12 +39,14 @@ The server should now be running. You can access the application by opening a we
 ## How Network Changes Are Detected
 
 `window.ethereum.on("chainChanged", handler)` is used.
+added in `./src/components/Navbar.jsx`
 
 On change, we reinitialize the provider and update the network name state.
 
 ### How Wallet State is Synced
 
 `window.ethereum.on("accountsChanged", handler)` listens to wallet switches.
+added in `./src/components/Navbar.jsx`
 
 Updates account and resets the connection state when disconnected.
 
@@ -61,5 +63,4 @@ UI state (status) is updated at each step:
 "success" → tx confirmed
 
 "error" → user rejects or tx fails
-
-Let me know if you’d like this integrated with a smart contract (e.g., mint()) or deployed to testnet with real feedback!
+added in `./src/components/Products.jsx`
